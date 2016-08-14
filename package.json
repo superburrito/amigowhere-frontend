@@ -1,0 +1,15 @@
+{
+  "name": "wheremyhomiesat",
+  "version": "1.0.0",
+  "description": "cs3216 app 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "michelle tan, lee kai yi, ten zhi yang and chua yao hui",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  }
+}
