@@ -2,13 +2,28 @@
 <html lang="en">
 <head>
 	<title>Where My Homies??</title>
+
 	<!-- local CSS dependencies -->
-	<link rel="stylesheet" href="/browser/main.css">
+	<link rel="stylesheet" href="main.css">
 	<!-- external JS dependencies -->
-	<script src="node_modules/angular/angular.js" defer></script>
-	<script src="node_modules/angular-ui-router/release/angular-ui-router.js" defer></script>
+	<script src="../node_modules/angular/angular.js" defer></script>
+	<script src="../node_modules/angular-ui-router/release/angular-ui-router.js" defer></script>
+
+	<!-- local JS dependencies -->
+	<script src="main.js" defer></script>
+	<script src="/home/home.controller.js" defer></script>
+	<script src="/home/home.factory.js" defer></script>
+	<script src="/home/home.state.js" defer></script>
+	
+	<script src="/navbar/navbar.directive.js" defer></script>
+
+	<script src="/city/city.controller.js" defer></script>
+	<script src="/city/city.factory.js" defer></script>
+	<script src="/city/city.state.js" defer></script>
 </head>
 <body ng-app="whereMyHomiesApp">
-	<!-- Michelle Here -->
-
+	<navbar></navbar>
+	<ui-view></ui-view>
 </body>
+</html>
+
