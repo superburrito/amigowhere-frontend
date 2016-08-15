@@ -22,8 +22,18 @@
 	<script src="/city/city.state.js" defer></script>
 </head>
 <body ng-app="amigowhereApp">
+	<script src="fbAPI.js"></script> 
 	<navbar></navbar>
 	<ui-view></ui-view>
+	<div>
+		<fb:login-button scope="public_profile,email,user_tagged_places,user_friends" autologoutlink="true" onlogin="checkLoginState();">
+		</fb:login-button>
+	</div>
+	 <script src="main.js"></script> 
+	 <div>
+		 <div id ="userNameDiv">name</div>
+		 <img alt="profilePic" id ="profileImg"/>
+	 </div>
 </body>
 </html>
 
