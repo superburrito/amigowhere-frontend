@@ -1,1 +1,1 @@
-var app = angular.module('whereMyHomiesApp', ['ui.router']);
+var app = angular.module('amigowhereApp', ['ui.router']);
