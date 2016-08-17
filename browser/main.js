@@ -1,1 +1,4 @@
-var app = angular.module('amigowhereApp', ['ui.router']);
+'use strict'
+window.app = angular.module('amigowhereApp', ['ui.router', 'ui.bootstrap']);
+
+
