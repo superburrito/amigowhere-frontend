@@ -1,5 +1,5 @@
 {
-  "name": "wheremyhomiesat",
+  "name": "amigowhere",
   "version": "1.0.0",
   "description": "cs3216 app 1",
   "main": "index.js",
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.8",
-    "angular-ui-router": "^0.3.1"
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7"
   }
 }
