@@ -3,7 +3,7 @@
 app.config(function ($stateProvider) {
   $stateProvider.state('city', {
     url: '/cities/:cityId',
-    templateUrl: 'city.html',
+    templateUrl: '/browser/city/city.html',
     controller: 'CityCtrl'
   });
   
