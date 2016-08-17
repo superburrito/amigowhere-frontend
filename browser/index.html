@@ -4,34 +4,55 @@
 <head>
 	<title>Amigowhere</title>
 
-	<!--external CSS dependencies -->
-	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-	<!-- local CSS dependencies -->
-	<link rel="stylesheet" href="main.css">
 	<!-- external JS dependencies -->
-	<script src="../node_modules/angular/angular.js" defer></script>
-	<script src="../node_modules/angular-ui-router/release/angular-ui-router.js" defer></script>
+	<script src="/node_modules/angular/angular.js"></script>
+	<script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 
 	<!-- local JS dependencies -->
-	<script src="main.js" defer></script>
-	<script src="/city/city.factory.js" defer></script>
-	<script src="/home/home.controller.js" defer></script>
-	<script src="/home/home.state.js" defer></script>
-	<script src="/navbar/navbar.directive.js" defer></script>
-	<script src="/city/city.controller.js" defer></script>
-	<script src="/city/city.state.js" defer></script>
+	<script src="/browser/main.js"></script>
+	<script src="/browser/city/city.factory.js" ></script>
+	<script src="/browser/home/home.controller.js"></script>
+	<script src="/browser/home/home.state.js"></script>
+	<script src="/browser/navbar/navbar.directive.js"></script>
+	<script src="/browser/city/city.controller.js"></script>
+	<script src="/browser/city/city.state.js"></script>
+
+  <script src="/node_modules/angular-aria/angular-aria.js"></script> 
+  <script src="/node_modules/angular-animate/angular-animate.js"></script> 
+  <script src="/node_modules/angular-material/angular-material.js"></script> 
+
+	<!-- local CSS dependencies -->
+	<link rel="stylesheet" href="/browser/main.css">
 
 </head>
 
 <body ng-app="amigowhereApp">
-	<script src="fbAPI.js"></script> 
+	
+	<script src="/browser/fbAPI.js"></script> 
+
+
 	<navbar></navbar>
-	<ui-view></ui-view>
+	<ui-view>
+
+	<!-- copy from home.html, until we figure out how to render default state -->
+
+	<section class="flexbox-parent" id="home" >
+		<div layout="row" layout-align="center">
+			<div ng-repeat="country in countries">
+			<!-- display data for each country -->
+
+			</div>
+
+	</section>
+	<!-- end of home.html copy -->
+
+	</ui-view>
+
+
 	<div>
 		<fb:login-button scope="public_profile,email,user_tagged_places,user_friends" autologoutlink="true" onlogin="checkLoginState();">
 		</fb:login-button>
 	</div>
-	 <script src="main.js"></script> 
 	 <div>
 		 <div id ="userNameDiv">name</div>
 		 <img alt="profilePic" id ="profileImg"/>

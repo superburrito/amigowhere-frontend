@@ -1,13 +1,14 @@
 'use strict';
 
 app.directive('navbar', function($state){
-	restrict: 'E',
-	templateUrl: '/navbar/navbar.html',
-	link: function(scope, element, attrs){
-		//Todo: $scope of navbar?
-		scope.goToHome = function () {
-			$state.go('home');
+	return {
+		restrict: 'E',
+		templateUrl: '/browser/navbar/navbar.html',
+		link: function(scope){
+			//Todo: $scope of navbar?
+			scope.goToHome = function () {
+				$state.go('home');
+			}
 		}
-	}
-	
+	}	
 });
