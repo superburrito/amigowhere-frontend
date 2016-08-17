@@ -3,6 +3,8 @@
 app.config(function ($stateProvider) {
   $stateProvider.state('home', {
     url: '/',
-    templateUrl: 'home.html'
+    templateUrl: 'home.html',
+    controller: 'HomeCtrl'
   });
+  
 });
